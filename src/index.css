@@ -1,13 +1,70 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header{
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.boxall{
+    padding: 0 15px;
+}
+
+.boxall > div{
+ display: flex;
+ width: 100%;
+ flex-wrap: wrap;
+ max-width: 1000px;
+ margin: auto;
+ gap: 15px;
+
+}
+
+.box{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+
+.boxall > div .box{
+    width: 30%;
+    @media (max-width : 1024px){
+        width : 48%
+    }
+    @media (max-width : 576px){
+        width : 100%
+    }
+}
+
+.box img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.box .carddetails{
+    padding: 10px;
+}
+
+.box a{
+    text-decoration: none;
+}
+
+.box p, .box h4{
+    color: #000;
+}
+
+
+.box-in{
+    max-width: 1000px;
+    margin: 0 15px;
+}
+
+.box-in img{
+    text-align: left;
 }
